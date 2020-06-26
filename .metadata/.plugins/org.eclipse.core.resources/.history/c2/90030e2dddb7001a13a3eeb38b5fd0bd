@@ -39,11 +39,7 @@ public class Magazine
 	public static int RNG3 (int x, int y, int z, String[] mag)//makes 3rd luck bullet
 	{//start method
 		Random rand = new Random();
-		if(x == y )//prevents 3rd + 1st bullet stacking
-		{
-			x = rand.nextInt(mag.length);
-		}
-		if(x == z)//prevents 3rd + 2nd bullet stacking
+		if(x == y || x == z )//prevents all bullets from stacking
 		{
 			x = rand.nextInt(mag.length);
 		}

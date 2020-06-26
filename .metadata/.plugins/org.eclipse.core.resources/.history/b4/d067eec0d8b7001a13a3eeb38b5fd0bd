@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Magazine
+{//start class
+	public static void main(String[] args)
+	{//start main
+		int gen1 = 0, gen2 = 0, gen3 = 0;
+		String[] mag = new String[13];
+		gen1 = RNG1(gen1,mag);
+		System.out.println(gen1);
+		/*
+		for(int i =0; i < mag.length; i++)
+		{//start loop
+			
+		}
+		*/
+	}//end main
+	public static int RNG1 (int x, String[] mag)//makes RNG number
+	{//start method
+		Random rand = new Random();
+		x = rand.nextInt(mag.length);
+		return x;
+	}//end method
+
+}//end class
